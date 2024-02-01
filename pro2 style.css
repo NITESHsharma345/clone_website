@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*background image strats*/
+body{
+    background-image: url(bk.jpeg);
+    background-repeat: no-repeat;
+    background-size: 222vh;
+}
+/*background image strats*/
+
+
+/*Nav menu starts*/
+nav{
+    background-color: rgb(92, 192, 254);
+}
+nav img{
+    width: 20%;
+    margin:5px 5px;
+}
+nav ul {
+    float: right;
+    margin: 13px 40px 40px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+
+}
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 7px 8px 7px;
+}
+a.active,a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+nav .nav_dot img{
+    width: 45px;
+    height: 45px;
+    float: right;
+}
+div.btn{
+    display: inline;
+    margin: 0;
+    float: right;
+    display:none;
+}
+/*Nav menu ends*/
+
+
+
+/*content stars*/
+.wrapper {
+    width:1020px;
+    margin: 0 auto;
+}
+.product{
+    width:100%;
+}
+.img_container{
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    margin: 13px 2px;
+}
+.prodcut-img {
+    width: 270px;
+    height: 380px;
+    display: inline-block;
+    overflow: auto;
+    margin: 9px 8px 0px 1px;
+    border: solid 1px #ccc;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.prodcut-img img{
+    width:100%;
+    height:280px;
+ scroll-margin-inline : none;
+
+}
+.prodcut-img img:hover{
+    transition: 0ms;
+    transform: scale(1.1);
+    z-index: 1;
+}
+.prodcut_information {
+    white-space: pre-line;
+    margin: 5px 5px 5px 5px;
+    overflow: hidden;
+ text-overflow: ellipsis;
+ -webkit-line-clamp: 2;
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+
+}
+.zoom_container{
+    overflow: hidden;
+}
+
+.section_haeding h3{
+    margin: 17px 0 10px 0;
+    font-size: 30px;
+    background-color: #000000;
+    color: azure;
+    padding: 10px 10px 10px 10px;
+}
+
+.price {
+    font-size: x-large;
+    margin: 5px 5px 5px 5px;
+}
+strike{
+    font-size: 15px;
+}
+/*content endx*/
+
+
+
+/* Slide sectionn(starts)*/
+
+.slide_container {
+    background-color: #ede6d6;
+    margin: 10px auto;
+    position: relative;
+    width: 800px;
+    height: 282px;
+    border: 6px solid #ede6d6;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.slide_container .slides{
+    width:100%;
+    height: calc(100% - 40px);
+    position:relative;
+}
+.slide_container .slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.slide_container .slides img :not(.active){
+    top: 0;
+    left: -100;
+
+}
+
+span.next, span.prev, .slick-arrow{
+    position: absolute;
+    top: 27%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color:#000000;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 1;
+
+}
+span.next, .slick-next{
+    right:23%;
+}
+span.prev,  .slick-prev{
+    left :23%;
+}
+
+span.next:hover,span.prev:hover{
+    background-color: white;
+    transition: 1s;
+}
+li {
+    text-align: center;
+    display: inline-block;
+}
+
+button#slick-slide-control04,button#slick-slide-control03,button#slick-slide-control02,
+button#slick-slide-control01,button#slick-slide-control00{
+    font-size: 5px;
+    border-radius: 15px;
+    background-color: #e4e4e4;
+    margin: 2px;
+}
+button#slick-slide-control00{
+    font-size: 5px;
+    border-radius: 15px;
+    background-color: #080808;
+    margin: 2px;
+}
+button#slick-slide-control04:hover,button#slick-slide-control03:hover,button#slick-slide-control02:hover,
+button#slick-slide-control01:hover,button#slick-slide-control00:hover{
+    background-color:#000000;   
+}
+
+ul.slick-dots {
+    margin-inline: 47%;
+    margin-top: 1px;
+}
+.slick-prev .slick-arrow{
+    max-width: 50%;
+}
+button.slick-prev.slick-arrow{
+    margin: 75px 0px 0 -22%;
+    border: white;
+    border-radius: 106%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+li.slick-active {
+    font-size: 5px;
+    border-radius: 15px;
+    background-color: #080808;
+    margin: 2px;
+}
+.slick-next {
+    right: 2%;
+    margin: 75px 0px 0 -22%;
+    border: white;
+    border-radius: 106%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+@media only screen and (max-width: 580px) {
+
+   
+    
+    
+}
